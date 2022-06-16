@@ -1,0 +1,21 @@
+
+PONER cd espacio y luego arrastrar carpeta
+
+alt+ 9 y luego 2 para barra invertida y usar comillas despues de cd y al final del nombre de la carpeta
+
+cd '/d/CODER HOUSE/Carrera Desarrollo Full Stack/Desarrollo Web/proyecto_final'
+
+
+
+dir o ls (deja ver los archivos en la carpeta)
+
+git status(ver el estado de mis archivos)
+
+git commit -m "...……"  (para poner que modificacion hiciste)
+
+git log (para ver que cambios se hicieron y en que version esta)
+
+git checkout (volver a otra version) - se pega el codigo de git log 
+ej: 820d6daa7ee4ffcc11cf4ecee710af9476f4d74a
+
+
