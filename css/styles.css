@@ -9,7 +9,7 @@ html,body{
 
 .border{border: 1px solid#ff0000;
 }
-
+/*GRILLA*/
 #wrapper{
     display: grid;
     grid-template-areas:
@@ -25,7 +25,7 @@ html,body{
     width: 100%;
     height: 100vh;
 }
-
+/*MEDIA QUERIE*/
 @media screen and (min-width:992px) {
     
     #wrapper{
@@ -48,12 +48,12 @@ header{
     align-items: center;
     color: white;
 }
-header h1{
+h1{
     font-family: 'DM Sans', sans-serif;
     text-transform: uppercase;
-    color: greenyellow;
+    color: rgb(0, 0, 0);
     font-size: 2em;
-    margin-left: 50px;
+    margin-left: 1em;
 }
 
 header nav {
@@ -70,12 +70,14 @@ header nav ul li{
 
 header nav ul li a {
     color: white;
-    font-size: 22px;
+    font-size: 1em;
     text-decoration: none;
 }
-
+/*ANIMACION*/
 header nav ul li a:hover {
     color: aqua;
+    font-size: 1.2em;
+    transition: 1s;
 }
 /*FIN HEADER*/
 
@@ -88,7 +90,7 @@ section#banner img{
     width: 100%;
     height: 100%;
 }
-
+/*CONTENIDO*/
 section#intro{
     grid-area: miIntro;
 }
@@ -114,7 +116,7 @@ section#intro article img{
     width: 100%;
     height: auto;
 }
-
+/*TEXTOS*/
 section#intro h2{
     font-family: 'DM Sans', sans-serif;
     text-transform: uppercase;
@@ -135,6 +137,24 @@ section#intro p{
 section#intro #texto-intro{
     color: white;
 }
+/*ANIMACION*/
+.animate-big:hover{
+    transform: scale(150%);
+    transition: 1s;
+}
+/*TEXTOS RECITALES*/
+section div ul li{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background-color:#cf1313
+
+}
+.txtContent{
+    margin-right: 1em;
+    font-family: 'PT Serif', serif;
+    text-transform: uppercase;
+}
 
 /*ASIDE*/
 aside{
@@ -144,8 +164,7 @@ aside#miMedia div{
     align-items: right;
     margin-left: 2em;
     margin-right: 2em;
-}
-    
+}  
 /*FIN CONTENIDO*/
 
 /*FOOTER*/
