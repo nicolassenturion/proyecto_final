@@ -48,6 +48,10 @@ header{
     align-items: center;
     color: white;
 }
+.linear-gradient{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(72,10,113,1) 47%, rgba(0,212,255,1) 100%);
+}
 h1{
     font-family: 'DM Sans', sans-serif;
     text-transform: uppercase;
@@ -139,7 +143,7 @@ section#intro #texto-intro{
 }
 /*ANIMACION*/
 .animate-big:hover{
-    transform: scale(150%);
+    transform: scale(110%);
     transition: 1s;
 }
 /*TEXTOS RECITALES*/
