@@ -159,6 +159,26 @@ section div ul li{
     font-family: 'PT Serif', serif;
     text-transform: uppercase;
 }
+/*corrección en bootstrap*/
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color:#0c0c0f;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color:green;
+    border-color:blue;
+}
 
 /*ASIDE*/
 aside{
