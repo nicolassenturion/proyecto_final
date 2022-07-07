@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color: #09240e;
+    color: white;
+  }
+  
+  .border {
+    border: 1px solid #ff0000;
+  }
+  
+  /*GRILLA*/
+  
+  #wrapper {
+    display: grid;
+    grid-template-areas: "miHeader" "miBanner" "miIntro" "miMedia" "miFooter";
+    grid-template-rows: 90px 1fr 1fr 1fr 60px;
+    grid-row-gap: 10px;
+    grid-column-gap: 2px;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  /*MEDIA QUERIE*/
+  @media screen and (min-width: 992px) {
+    #wrapper {
+      display: grid;
+      grid-template-areas: "miHeader miHeader" "miBanner miBanner" "miIntro miMedia" "miFooter miFooter";
+      grid-template-columns: auto 350px;
+    }
+  }
+  
+  /*HEADER*/
+  
+  header {
+    grid-area: miHeader;
+    background-color: #0c0c0f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .linear-gradient {
+    background: rgb(21, 78, 83);
+    background: linear-gradient(90deg, rgba(21, 78, 83, 1) 12%, rgba(16, 189, 193, 1) 53%, rgba(1, 65, 106, 1) 100%);
+  }
+  
+  h1 {
+    font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    margin-left: 1em;
+  }
+  
+  header nav {
+    margin-right: 1em;
+    flex-wrap: wrap;
+  
+    ul li {
+      display: inline-block;
+      list-style-type: none;
+      margin: 0 1em;
+      align-content: space-between;
+  
+      a {
+        color: white;
+        font-size: 1rem;
+        text-decoration: none;
+  
+        &:hover {
+          color: aqua;
+          font-size: 1.2rem;
+          transition: 1s;
+        }
+      }
+    }
+  }
+  
+  /*ANIMACION*/
+  
+  /*FIN HEADER*/
+  
+  /*INICIO INTRO*/
+  
+  section {
+    &#banner {
+      grid-area: miBanner;
+  
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    &#intro {
+      grid-area: miIntro;
+    }
+  }
+  
+  /*CONTENIDO*/
+  
+  hr {
+    border-color: red;
+  }
+  
+  section#intro {
+    #img-promo {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+  
+    article {
+      width: 250px;
+      height: 450px;
+      border: 1px solid rgb(32, 32, 32);
+      background-color: #070707;
+      border-radius: 8px;
+      box-shadow: 3px 3px 2px rgba(99, 99, 99, 0.933);
+      margin: 10px;
+  
+      &img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  
+    h2 {
+      font-family: 'DM Sans', sans-serif;
+      text-transform: uppercase;
+      margin-left: 0.5em;
+      margin-top: 1rem;
+      color: #eeeeee;
+    }
+  
+    p {
+      margin-left: 1em;
+      margin-right: 1em;
+      margin-bottom: 2em;
+      color: black;
+      font-family: 'PT Serif', serif;
+      text-align: justify;
+    }
+  
+    #texto-intro {
+      color: white;
+    }
+  }
+  
+  /*TEXTOS*/
+  
+  /*ANIMACION*/
+  
+  .animate-big:hover {
+    transform: scale(110%);
+    transition: 1s;
+  }
+  
+  /*TEXTOS RECITALES*/
+  
+  section div ul li {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: #cf1313;
+  }
+  
+  .txtContent {
+    margin-right: 1em;
+    font-family: 'PT Serif', serif;
+    text-transform: uppercase;
+  }
+  
+  /*corrección de bootstrap*/
+  
+  .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #0c0c0f;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+  }
+  
+  .jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #0c0c0c;
+    border-radius: 0.3rem;
+  }
+  
+  /*BOTONES*/
+  
+  .btn-primary {
+    color: #fff;
+    background-color: red;
+    border-color: rgb(255, 255, 255);
+  }
+  
+  .btn-danger {
+    color: #fff;
+    background-color: #ff0019;
+    border-color: #ffffff;
+    margin-top: 1rem;
+  }
+  
+  /*TEXTOS*/
+  
+  section#intro {
+    p {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-bottom: 2rem;
+      color: rgb(255, 255, 255);
+      font-family: 'PT Serif', serif;
+      text-align: justify;
+    }
+  
+    h1 {
+      font-family: 'DM Sans', sans-serif;
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+      font-size: 3rem;
+      margin-left: 1rem;
+    }
+  }
+  
+  /*ASIDE*/
+  
+  aside {
+    grid-area: miMedia;
+  
+    &#miMedia div {
+      align-items: right;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  }
+  
+  /*FIN CONTENIDO*/
+  
+  /*FOOTER*/
+  
+  footer {
+    padding: 2rem;
+    grid-area: miFooter;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #0c0c0f;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
