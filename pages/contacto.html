@@ -4,60 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../assets/img/web icon.png">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Green Day - Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,700&family=PT+Serif&display=swap" rel="stylesheet">
+    <title>Green Day</title>
 </head>
+
 <body>
-    <!-- Inicio header-->
-    <header>
-        <a href="../index.html">
-            <img src="../assets/img/Green Day Logo.png">
-        </a>
-        <!-- Inicio nav-->
-        <nav> 
-            <ul class="estiloLista">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="biografia.html" title="Biografia">Biografia</a></li>
-                <li><a href="recitales.html" title="Recitales">Recitales</a></li>
-                <li><a href="discografia.html" title="Discografía">Discografía</a></li>
-                <li><a href="contacto.html" title="Contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <div id="wrapper">
+      <header id="miHeader" class="linear-gradient">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light linear-gradient">
+                <a href="../index.html">
+                <img class="animate-big" width="150px" height="auto" src="../assets/img/Green Day Logo.png">
+                </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/biografia.html">Biografia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/recitales.html">Recitales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/discografia.html">Discografía</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
         <!-- Fin nav-->
-        
     </header> 
     <!-- Fin header-->
 
 <!-- Inicio Main-->
-<main>
-    <section>
-        <img class="banner"src="../assets/img/header5.png" alt="img contacto">
+<!-- BANNER-->
+<section id="banner">
+    <img src="../assets/img/header4.png" alt="Banner">
     </section>
-    <section>
-		<article>
-			<form action="#">
-                <h2 class="transparent">CONSULTAS</h2>
-                <label for="Tours"><input id="Tours" type="radio" name="Tours-Tienda-Fan Club" value="Tours"> Tours</label>
-                <label for="Tienda"><input id="Tienda" type="radio" name="Tours-Tienda-Fan Club" value="Tienda"> Tienda</label>
-                <label for="Fan Club"><input id="Fan Club" type="radio" name="Tours-Tienda-Fan Club" value="Fan Club"> Fan Club</label>
-                <input type="text" placeholder="Consulta" required>
-                <button type="submit">Enviar</button>
-              </form>
-		</article>
-	</section>
-</main>
-<br>
-<!-- Fin main-->
-
-<!-- Inicio footer-->
-<footer>
-        <h3>GREEN DAY</h3>
-        <h3>RRSS</h3>
-        <h3>CONTACTO</h3>
-        <h3>Todos los derechos reservados © 2022</h3>
-</footer>
-<!-- Fin footer-->
-
-</body>
-</html>
+        <!-- INTRO-->
+        <section class="container" id="intro">
+          <div id="texto-intro">
+              <div class="jumbotron jumbotron-fluid" id="intro">
+                  <div class="container">
+                    <h1>Adquirí tus entradas</h1>
+                    <hr>
+                    <p class="lead">PREVENTA BBVA</p>
+                      <P> Desde el JUEVES 26-05 a las 12hs del mediodía
+                      Hasta agotar stock o hasta el VIERNES 27-05 a las 11hs de la mañana, lo que ocurra primero.
+                      Exclusiva para clientes BBVA con tarjetas Visa Crédito y Mastercard Crédito emitidas en Argentina.
+                      <br>
+                      <p class="lead">VENTA GENERAL</p>
+                      <p>Desde el VIERNES 27-05 a las 12hs del mediodía.
+                      Medios de pago habilitados: VISA débito y crédito, Mastercard débito y crédito, Maestro, Naranja y Amex. 
+                      Tarjetas internacionales: únicamente Visa Crédito y Mastercard Crédito.</p>
+                      <a href="./pages/biografia.html" class="btn btn-primary">Conocé más</a>
+                    </P>
+                  </div>
+              </div>
+          </div>
+        <!-- IMAGENES DE SHOWS-->
+        <form>
+            <!-- Name input -->
+            <div class="form-outline mb-4">
+              <input type="text" id="form4Example1" class="form-control" />
+              <label class="form-label" for="form4Example1">Nombre y apellido</label>
+            </div>
+          
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form4Example2" class="form-control" />
+              <label class="form-label" for="form4Example2">Correo electrónico</label>
+            </div>
+          
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+              <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+              <label class="form-label" for="form4Example3">Mensaje</label>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Enviar</button>
+          </form>
+<!-- Gallery -->
+    </section>
+    <!-- ASIDE-->
+    <aside id="miMedia">
+        <div class="animate-big">
+            <img width="290px" height="auto" src="../assets/img/promo1.jpg" alt="promo argentina">
+            <p>
+            Adquirí tus entradas!
+            <a href="./contacto.html">
+            <button type="button" class="btn btn-danger">Comprar</button>
+            </a>
+            </p>
+        </div>
+        <div class="card">
+            <h3 class="card-header">GREEN DAY</h3>
+            <div class="card-body">
+              <h4 class="card-title">Father of All...disponible!</h4>
+              <p class="card-text">Encontra toda la discografia que siempre quisiste en su version física y digital!</p>
+              <a href="./discografia.html" class="btn btn-primary">Comprar ahora!</a>
+            </div>
+          </div>
+    </aside>
+    <!-- FOOTER-->
+    <footer id="miFooter">
+        <P>Copyright &copy; Green Day 2022&reg;</P>
+    </footer>

@@ -43,11 +43,7 @@ html,body{
 /*HEADER*/
 header{
     grid-area: miHeader;
-    background-color: #0c0c0f;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
+
 }
 .linear-gradient{
     background: rgb(21,78,83);
@@ -61,16 +57,34 @@ h1{
     margin-left: 1em;
 }
 
-header nav {
-    margin-right:1em;
-    flex-wrap: wrap;
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
 }
 
-header nav ul li{
+.navbar-brand {
     display: inline-block;
-    list-style-type: none;
-    margin:0 1em;
-    align-content: space-between;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 header nav ul li a {
@@ -82,7 +96,7 @@ header nav ul li a {
 header nav ul li a:hover {
     color: aqua;
     font-size: 1.2rem;
-    transition: 1s;
+    transition: 0.5s;
 }
 /*FIN HEADER*/
 
