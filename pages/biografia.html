@@ -4,62 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../assets/img/web icon.png">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Green Day - Biografia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,700&family=PT+Serif&display=swap" rel="stylesheet">
+    <title>Green Day</title>
 </head>
-<body>
-    <!-- Inicio header-->
-    <header>
-        <a href="../index.html">
-            <img src="../assets/img/Green Day Logo.png">
-        </a>
-        <!-- Inicio nav-->
-        <nav> 
-            <ul class="estiloLista">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="biografia.html" title="Biografia">Biografia</a></li>
-                <li><a href="recitales.html" title="Recitales">Recitales</a></li>
-                <li><a href="discografia.html" title="Discografía">Discografía</a></li>
-                <li><a href="contacto.html" title="Contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <!-- Fin nav-->
-    
-    </header>
-    <!-- Fin header-->
 
-    <!-- Inicio Main-->
-<main>
-    <section>
-        <img class="banner"src="../assets/img/header2.png" alt="img biografia">
-    </section>
-    <section>
-        <article>
-            <h2 class="transparent">BIOGRAFÍA</h2>
-                <div class="respTxt">
-                <p class="txtContent">
-                Green Day es una banda estadounidense de rock integrada por Billie Joe Armstrong (guitarra y voz), Mike Dirnt (bajo y coros) y Tré Cool (batería y coros). El grupo originario de Berkeley,5​6​ California, se gestó prematuramente en 1986 bajo el nombre de Sweet Children, con el baterista John Kiffmeyer (más conocido como Al Sobrante). En 1989 se cambiaron al nombre actual ya que el anterior (Sweet Children) se confundía con el de una banda local de esa época y poco después del lanzamiento de su primer álbum de estudio (39/Smooth), Tré Cool reemplazó a Al Sobrante.1​
-                <br> 
-                Es uno de muchos grupos distintos que nacieron en el club 924 Gilman Street, sitio que frecuentaban bandas de punk rock locales. Sus primeras publicaciones se realizaron por medio del sello discográfico independiente Lookout!,7​ gracias a las exitosas ventas de sus primeros trabajos discográficos, se obtuvo una importante cantidad de admiradores. Algunos años después, en 1994 el conjunto firmó con Reprise Records, con este sello lanzaron el aclamado Dookie.8​Con este nuevo álbum el grupo musical llevó el sonido de finales de la década de 1970 a la nueva generación, además, el álbum se convirtió en un éxito internacional y lleva vendidas más de treinta millones de copias en todo el mundo.9​10​
-                <br>    
-                Green Day junto a otras bandas como The Offspring y Rancid, fueron los que produjeron el renacimiento y popularización del punk rock en los Estados Unidos, como de la cultura misma,11​12​ las masivas ventas produjeron la apertura de una ola de grupos pop punk y punk rock. Diez años después muchos de esos conjuntos se encuentran inactivos o disueltos, mientras que Green Day sigue en plena vanguardia musical con las ópera rock American Idiot y 21st Century Breakdown de 2004 y 2009 respectivamente, ambas con un Premio Grammy al mejor álbum de rock. Editaron una trilogía de álbumes titulados ¡Uno!, ¡Dos! y ¡Tré!, editados en septiembre, noviembre y diciembre de 2012 respectivamente.1​ Su álbum Revolution Radio salió a la venta el 7 de octubre de 2016.13​En febrero de 2020 sacan su último álbum titulado "Father of all..." con 10 temas producido por Butch Walker, editado por la discográfica Reprise.
-                <br>    
-                El conjunto estadounidense ha vendido casi 90 millones de copias en todo el mundo14​15​ y más de 25 millones solo en su país.16​17​ En 2010 se estrenó una adaptación teatral del álbum American Idiot en Broadway, el musical fue nominado para Tony Awards, incluyendo Mejor Musical y Mejor Diseño Escénico, y ha recibido comentarios positivos en general. A mediados de 2011 la revista Kerrang! los nombró como el segundo grupo más influyente surgido en los últimos treinta años, solo por detrás de Metallica.18​ Según una encuesta pública, en la publicación quincenal de Rolling Stone, se eligió a Green Day como el mejor conjunto de punk de la historia.
-                </p>
+<body>
+    <div id="wrapper">
+      <!-- Inicio nav-->
+        <header id="header" class="linear-gradient">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light linear-gradient">
+            <a href="../index.html">
+            <img class="animate-big" width="150px" height="auto" src="../assets/img/Green Day Logo.png">
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../pages/biografia.html">Biografia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/recitales.html">Recitales</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/discografia.html">Discografía</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+                <!-- Fin nav-->
+        </header>
+            <!-- BANNER-->
+        <section id="banner">
+            <img src="../assets/img/header2.png" alt="Banner">
+            </section>
+            <!-- INTRO-->
+            <section class="container" id="intro">
+                <div id="texto-intro">
+                    <h2>Biografia</h2>
+                    <div class="txtRecital">
+                        <p>Green Day es una banda estadounidense de rock integrada por Billie Joe Armstrong (guitarra y voz), Mike Dirnt (bajo y coros) y Tré Cool (batería y coros). El grupo originario de Berkeley,5​6​ California, se gestó prematuramente en 1986 bajo el nombre de Sweet Children, con el baterista John Kiffmeyer (más conocido como Al Sobrante). En 1989 se cambiaron al nombre actual ya que el anterior (Sweet Children) se confundía con el de una banda local de esa época y poco después del lanzamiento de su primer álbum de estudio (39/Smooth), Tré Cool reemplazó a Al Sobrante.1​
+                            Es uno de muchos grupos distintos que nacieron en el club 924 Gilman Street, sitio que frecuentaban bandas de punk rock locales. Sus primeras publicaciones se realizaron por medio del sello discográfico independiente Lookout!,7​ gracias a las exitosas ventas de sus primeros trabajos discográficos, se obtuvo una importante cantidad de admiradores. Algunos años después, en 1994 el conjunto firmó con Reprise Records, con este sello lanzaron el aclamado Dookie.8​Con este nuevo álbum el grupo musical llevó el sonido de finales de la década de 1970 a la nueva generación, además, el álbum se convirtió en un éxito internacional y lleva vendidas más de treinta millones de copias en todo el mundo.9​10​
+                            Green Day junto a otras bandas como The Offspring y Rancid, fueron los que produjeron el renacimiento y popularización del punk rock en los Estados Unidos, como de la cultura misma,11​12​ las masivas ventas produjeron la apertura de una ola de grupos pop punk y punk rock. Diez años después muchos de esos conjuntos se encuentran inactivos o disueltos, mientras que Green Day sigue en plena vanguardia musical con las ópera rock American Idiot y 21st Century Breakdown de 2004 y 2009 respectivamente, ambas con un Premio Grammy al mejor álbum de rock. Editaron una trilogía de álbumes titulados ¡Uno!, ¡Dos! y ¡Tré!, editados en septiembre, noviembre y diciembre de 2012 respectivamente.1​ Su álbum Revolution Radio salió a la venta el 7 de octubre de 2016.13​En febrero de 2020 sacan su último álbum titulado "Father of all..." con 10 temas producido por Butch Walker, editado por la discográfica Reprise.
+                            El conjunto estadounidense ha vendido casi 90 millones de copias en todo el mundo14​15​ y más de 25 millones solo en su país.16​17​ En 2010 se estrenó una adaptación teatral del álbum American Idiot en Broadway, el musical fue nominado para Tony Awards, incluyendo Mejor Musical y Mejor Diseño Escénico, y ha recibido comentarios positivos en general. A mediados de 2011 la revista Kerrang! los nombró como el segundo grupo más influyente surgido en los últimos treinta años, solo por detrás de Metallica.18​ Según una encuesta pública, en la publicación quincenal de Rolling Stone, se eligió a Green Day como el mejor conjunto de punk de la historia.</p>
+                    </div>
                 </div>
-        </article>
-    </section>
-</main>
-<!-- Fin main-->
-    
-<!-- Inicio footer-->
-<footer>
-        <h3>GREEN DAY</h3>
-        <h3>RRSS</h3>
-        <h3>CONTACTO</h3>
-        <h3>Todos los derechos reservados © 2022</h3>
-</footer>
-<!-- Fin footer-->
+                <!-- IMAGENES DE SHOWS-->
+      <div class="row container">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <img
+              src="../assets/img/live5.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Live show in Argentina"
+            />
+        
+            <img
+              src="../assets/img/live6.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Live show in Argentina 2"
+            />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="../assets/img/promo2.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Live show in Argentina 3"
+            />
+        
+            <img
+              src="../assets/img/promo3.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Live show in Argentina 4"
+            />
+          </div>
+        
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="../assets/img/live1.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Live show in Argentina 5"
+            />
+        
+            <img
+              src="../assets/img/live2.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Live show in Argentina 6"
+            />
+          </div>
+        </div>
+        <!-- Gallery -->
+            </section>
+            <!-- ASIDE-->
+            <aside id="miMedia">
+                <div class="animate-big">
+                    <img width="290px" height="auto" src="../assets/img/promo1.jpg" alt="promo argentina">
+                    <p>
+                    Adquirí tus entradas!
+                    <a href="./contacto.html">
+                    <button type="button" class="btn btn-danger">Comprar</button>
+                    </a>
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="card-header">GREEN DAY</h3>
+                    <div class="card-body">
+                      <h4 class="card-title">Father of All...disponible!</h4>
+                      <p class="card-text">Encontra toda la discografia que siempre quisiste en su version física y digital!</p>
+                      <a href="./discografia.html" class="btn btn-primary">Comprar ahora!</a>
+                    </div>
+                  </div>
+            </aside>
+            <!-- FOOTER-->
+            <footer id="miFooter">
+                <P>Copyright &copy; Green Day 2022&reg;</P>
+            </footer>
+        </div> 
 </body>
 </html>
