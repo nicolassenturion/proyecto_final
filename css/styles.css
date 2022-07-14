@@ -56,11 +56,9 @@ h1{
     font-size: 2rem;
     margin-left: 1em;
 }
-
 .navbar-light .navbar-brand {
     color: rgba(0,0,0,.9);
 }
-
 .navbar-brand {
     display: inline-block;
     padding-top: 0.3125rem;
