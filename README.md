@@ -1,6 +1,5 @@
 <h1>
   <p>Proyecto final Coder House</p>
-  <img src="#" alt="Green day logo">
 </h1>
 
 
